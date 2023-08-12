@@ -25,8 +25,8 @@ public class ShortestDistanceFinder {
         cityGraph.addEdge("C", "D", 2);
         cityGraph.addEdge("D", "E", 7);
 
-        String startCity = "A"; // Cidade de origem
-        String endCity = "E"; // Cidade de destino
+        String startCity = "A"; // Adição da cidade de origem
+        String endCity = "E"; // Adição da cidade de destino
 
         int shortestDistance = dijkstra(cityGraph, startCity, endCity);
         System.out.println("A menor distância entre " + startCity + " e " + endCity + " é: " + shortestDistance);
