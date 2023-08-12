@@ -45,7 +45,8 @@ public class ShortestDistanceFinder {
                 return currentNode.distance;
             }
 
-            for (Map.Entry<String, Integer> neighborEntry : graph.graph.getOrDefault(currentNode.city, Collections.emptyMap()).entrySet()) {
+            for (Map.Entry<String, Integer> neighborEntry : graph.graph
+                    .getOrDefault(currentNode.city, Collections.emptyMap()).entrySet()) {
                 String neighborCity = neighborEntry.getKey();
                 int newDistance = currentNode.distance + neighborEntry.getValue();
 
